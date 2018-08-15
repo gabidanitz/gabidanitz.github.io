@@ -25,6 +25,7 @@
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+    font-weight: bolder;
   }
 .topnav {
     text-align: justify;
@@ -34,6 +35,6 @@
 body {
    background-repeat: no-repeat;
    background-size: cover;
-   background-color: lightgreen;
+   background-color: white;
    background-image: url("images/sunsetfield.jpg");
 }
