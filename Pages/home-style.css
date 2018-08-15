@@ -2,6 +2,7 @@
     background-color: white;
     overflow: hidden;
     font-family: "Courier New";
+    opacity: 0.6;
     display: flex;
     justify-content: space-between;
 }
