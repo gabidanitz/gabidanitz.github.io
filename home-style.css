@@ -39,3 +39,10 @@ body {
    background-color: lightblue;
    background-image: url("images/fruit.jpg");
 }
+.title {
+  font-family: helvetica;
+  color: white;
+  opacity: 0.8;
+  display: flex;
+  text-align: justify;
+}
