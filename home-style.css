@@ -41,6 +41,16 @@ body {
    opacity: 0.8px;
    overflow: hidden;
 }
+
+h3 {
+  background-color: white;
+  overflow: hidden;
+  font-family: "Courier New";
+  font-size: 30px;
+  opacity: 0.8;
+  display: flex;
+
+}
 .title {
   position: relative;
   top: 40px;
