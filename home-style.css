@@ -67,3 +67,41 @@ h3 {
   align-items: center;
   text-align: center;
 }
+
+.questions {
+  position: relative;
+  top: 30px;
+  right: 30px;
+  left: 30px;
+  bottom: 30px;
+  padding: 20px 20px;
+  opacity: 0.75;
+  font-weight: lighter;
+  font-family: Helvetica;
+  font-size: 25px;
+  background-color: white;
+  overflow: hidden;
+}
+
+button {
+    background-color: lightgrey;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+select {
+  font-family: Helvetica;
+  font-size: 16px;
+  top: 20px;
+  border: none;
+  background-color: lightgrey;
+  padding: 8px 15px;
+  color: white;
+  display: flex;
+
+}
