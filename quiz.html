@@ -15,19 +15,50 @@
     <a href="getinvolved.html">Get Involved</a>
     <a href="moreinfo.html">More Information   </a>
   </div>
-  <div class="questions">
-    <h3 class="question 1">
-      How often do you eat meat?
-    </h3>
-          <select name="cars">
-            <option value="2-3">2-3+ times per day</option>
-            <option value="1">1 time per day</option>
-            <option value=">1">1-2 times per week</option>
-            <option value="0">Never</option>
-          </select>
-          <br><br>
-          <input type="submit">
-    </div>
+<div class="questions">
+  <form>
+    How often do you consume meat or poultry?
+  <select id="numberPicker">
+    <option value = 1>At Every Meal</option>
+    <option value = 2>Once Per Day</option>
+    <option value = 3>A Few Times Per Week</option>
+    <option value = 4>Never</option>
+  </select>
+  </form>
+  <button type="button" onclick="myFunction()">Submit</button>
+
+  <p id="numberOut" class="answers"></p>
+
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("numberPicker").value;
+
+    if (x == 1){
+
+    document.getElementById("numberOut").innerHTML = "Meat production, especially the livestock industry, takes a huge toll on the environment each year. Nearly 20% of greenhouse gas emissions, including 40% of methane emissions, come from livestock production. Additionally, over two thirds of crops grown across the globe are put towards animal feed. It also contributes to soil erosion, freshwater depletion, and nutrient pollution from fertilizers used to grow livestock feed. While you don’t have to go vegetarian, reducing your meat consumption by even a few times a week can reduce your environmental footprint. Try giving up meat one day a week, and aim to implement more pasture raised poultry and less red meats into your diet.";
+";
+
+    }
+    if (x == 2){
+
+    document.getElementById("numberOut").innerHTML = "I'd like a banana, please.";
+
+    }
+    if (x == 3){
+
+    document.getElementById("numberOut").innerHTML = "I'd like a banana, please.";
+
+    }
+    if (x == 4){
+
+    document.getElementById("numberOut").innerHTML = "I'd like a banana, please.";
+
+    }
+  }
+  </script>
+</div>
+
 
     <style>
       body {
