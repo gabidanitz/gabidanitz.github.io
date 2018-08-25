@@ -38,32 +38,56 @@ body {
    background-size: cover;
    background-color: white;
    background-image: url("images/veggies&tractor.jpg");
-   opacity: 0.8px;
+   opacity: 0.9px;
    overflow: hidden;
 }
 
 h3 {
   background-color: white;
   overflow: hidden;
-  font-family: "Courier New";
+  font-family: "Helvetica";
   font-size: 30px;
+  font-style:lighter;
   opacity: 0.8;
   display: flex;
 
 }
+.main-content {
+  position: relative;
+  top: 70px;
+  right: 30px;
+  left: 30px;
+  bottom: 30px;
+  padding: 20px 20px;
+  opacity: 0.85;
+  font-weight: lighter;
+  font-family: Helvetica;
+  font-size: 25px;
+  background-color: white;
+  overflow: auto;
+}
+
+.form {
+  position: relative;
+  top: 30px;
+  bottom: 30px;
+}
 .title {
   position: relative;
   top: 40px;
-  right: 30px;
   left:30px;
+  right: 30px;
   font-family: "Courier New";
   color: black;
+  font-size: 30px;
   opacity: 0.75;
-  overflow: hidden;
+  overflow: auto;
   background-color: white;
   display: flex;
   padding-left: 20px;
-  padding-left: 20px
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   align-items: center;
   text-align: center;
 }
@@ -75,7 +99,7 @@ h3 {
   left: 30px;
   bottom: 30px;
   padding: 20px 20px;
-  opacity: 0.75;
+  opacity: 0.85;
   font-weight: lighter;
   font-family: Helvetica;
   font-size: 25px;
@@ -96,7 +120,7 @@ button {
 }
 select {
   font-family: Helvetica;
-  font-size: 16px;
+  font-size: 20px;
   top: 20px;
   border: none;
   background-color: lightgrey;
