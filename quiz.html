@@ -26,10 +26,26 @@
       <option value = 3>A Few Times Per Week</option>
       <option value = 4>Never</option>
     </select>
-    </form>
+  </form>
     <button type="button" onclick="myFunction()">Submit</button>
 
     <p id="numberOut1" class="answers"></p>
+  </div>
+    <div class="question 2">
+      <form>
+        If you eat fish, which type do you typically purchase?
+      <select id="numberPicker2">
+        <option value = "B1">Pacific cod, Albacore Tuna, or New Zealand Salmon</option>
+        <option value = "B2">Mahi Mahi, Tilapia, or Trout</option>
+        <option value = "B3">Bluefin Tuna, Halibut, or Coho Salmon</option>
+        <option value = "B4">N/A - I do not eat fish</option>
+      </select>
+      </form>
+
+      <button type="button" onclick="myFunction2()">Submit</button>
+
+      <p id="numberOut1" class="answers"></p>
+    </div>
 
     <script>
     function myFunction() {
@@ -53,56 +69,37 @@
       }
       if (x == 4){
 
-      document.getElementById("numberOut1").innerHTML = "Leading a vegetarian or vegan lifestyle significantly reduces your environmental impact, as plant based protein requires eleven times less fossil fuel energy to produce than animal protein. To further reduce your impact, aim to buy locally sourced groceries and produce. Local foods require less energy to transport, and reducing greenhouse gas emissions.";
+      document.getElementById("numberOut2").innerHTML = "Leading a vegetarian or vegan lifestyle significantly reduces your environmental impact, as plant based protein requires eleven times less fossil fuel energy to produce than animal protein. To further reduce your impact, aim to buy locally sourced groceries and produce. Local foods require less energy to transport, and reducing greenhouse gas emissions.";
 
       }
     }
-    </script>
-</div>
 
-  <div class="question 2">
-    <form>
-      If you eat fish, which type do you typically purchase?
-    <select id="numberPicker2">
-      <option value = B1>Pacific cod, Albacore Tuna, or New Zealand Salmon</option>
-      <option value = B2>Mahi Mahi, Tilapia, or Trout</option>
-      <option value = B3>Bluefin Tuna, Halibut, or Coho Salmon</option>
-      <option value = B4>N/A - I do not eat fish</option>
-    </select>
-    </form>
-
-    <button type="button" onclick="myFunction2()">Submit</button>
-
-    <p id="numberOut2" class="answers"></p>
-
-    <script>
     function myFunction2() {
       var x = document.getElementById("numberPicker2").value;
 
-      if (x == B1){
+      if (x == "B1"){
 
       document.getElementById("numberOut2").innerHTML = "These fish are on the Seafood Watch “Best Choices” list, meaning that they are sustainably caught or responsibly farmed options.";
 
 
       }
-      if (x == B2){
+      if (x == "B2"){
 
       document.getElementById("numberOut2").innerHTML = "These fish are on the Seafood Watch “Good Alternatives” list, meaning that they are generally raised in a responsible manner, but may include some environmental concerns.";
 
       }
-      if (x == B3){
+      if (x == "B3"){
 
       document.getElementById("numberOut2").innerHTML = "These fish are on the Seafood Watch “Avoid” list. This means that they are currently being farmed or fished in a way that harms the environment or threatens marine life. If possible, try to opt for New Zealand Salmon instead of Coho, and Albacore Tuna instead of Bluefin.";
 
       }
-      if (x == B4){
+      if (x == "B4"){
 
-      document.getElementById("numberOut2").innerHTML = "While fish is generally a more sustainable source of protein than meat, plant based diets are still the most energy efficient option. The fishing industry contributes to environmental problems including water pollution, overfishing, and biodiversity loss. By eating a plant based diet, you are reducing your environmental impact.";
+      document.getElementById("numberOut2").innerHTML = "While fish are generally a more sustainable source of protein than meat, plant based diets are still the most energy efficient option. The fishing industry contributes to environmental problems including water pollution, overfishing, and biodiversity loss. By eating a plant based diet, you are reducing your environmental impact.";
 
       }
     }
     </script>
-  </div>
 </div>
 
     <style>
@@ -111,6 +108,6 @@
         }
     </style>
 
-<!--end html from https://www.w3schools.com/css/css_navbar.asp -->
+<!--end html from https://www.w3schools.com/css/css _navbar.asp -->
 </body>
 </html>
