@@ -29,8 +29,8 @@
   </form>
     <button type="button" onclick="myFunction()">Submit</button>
 
-    <p id="numberOut1" class="answers"></p>
-  </div>
+    <p id="numberOut1"></p>
+
     <div class="question 2">
       <form>
         If you eat fish, which type do you typically purchase?
@@ -44,9 +44,10 @@
 
       <button type="button" onclick="myFunction2()">Submit</button>
 
-      <p id="numberOut1" class="answers"></p>
+      <p id="numberOut2"></p>
     </div>
   </div>
+</div>
 
     <script>
     function myFunction() {
@@ -54,7 +55,7 @@
 
       if (x == 1){
 
-      document.getElementById("numberOut1").innerHTML = "Meat production takes a huge toll on the environment each year: the livestock industry accounts for 14.5% of global greenhouse gas emissions. While you don’t have to go vegetarian, try giving up meat one day a week, and replacing some of the red meat in your diet with poultry. Poultry only accounts for 10% of greenhouse gas emissions caused by meat production, and requires 5 times less feed than livestock.";
+      document.getElementById("numberOut1").innerHTML = "Meat production takes a huge toll on the environment each year: the livestock industry accounts for 14.5% of global greenhouse gas emissions. While you do not have to go vegetarian, try giving up meat one day a week, and replacing some of the red meat in your diet with poultry. Poultry only accounts for 10% of greenhouse gas emissions caused by meat production, and requires 5 times less feed than livestock.";
 
 
       }
@@ -65,7 +66,7 @@
       }
       if (x == 3){
 
-      document.getElementById("numberOut1").innerHTML = "Did you know that pollution from concentrated factory farms often leaches into waterways, creating “dead zones”? These zones have little to no oxygen, causing fish and marine life to suffocate. By eating meat less frequently, you are already significantly reducing your environmental footprint. To take it a step further, try focusing on purchasing high quality, sustainably raised meat rather than meat produced on factory farms. Look for the labels “USDA Organic”, “pasture raised” and “grass-fed” when shopping for meat.";
+      document.getElementById("numberOut1").innerHTML = "Did you know that pollution from concentrated factory farms often leaches into waterways, creating 'dead zones'? These zones have little to no oxygen, causing fish and marine life to suffocate. By eating meat less frequently, you are already significantly reducing your environmental footprint. To take it a step further, try focusing on purchasing high quality, sustainably raised meat rather than meat produced on factory farms. Look for the labels 'USDA Organic', 'pasture raised' and 'grass-fed' when shopping for meat";
 
       }
       if (x == 4){
@@ -81,18 +82,18 @@
 
       if (x == "B1"){
 
-      document.getElementById("numberOut2").innerHTML = "These fish are on the Seafood Watch “Best Choices” list, meaning that they are sustainably caught or responsibly farmed options.";
+      document.getElementById("numberOut2").innerHTML = "These fish are on the Seafood Watch 'Best Choices' list, meaning that they are sustainably caught or responsibly farmed options.";
 
 
       }
       if (x == "B2"){
 
-      document.getElementById("numberOut2").innerHTML = "These fish are on the Seafood Watch “Good Alternatives” list, meaning that they are generally raised in a responsible manner, but may include some environmental concerns.";
+      document.getElementById("numberOut2").innerHTML = "These fish are on the Seafood Watch 'Good Alternatives' list, meaning that they are generally raised in a responsible manner, but may include some environmental concerns.";
 
       }
       if (x == "B3"){
 
-      document.getElementById("numberOut2").innerHTML = "These fish are on the Seafood Watch “Avoid” list. This means that they are currently being farmed or fished in a way that harms the environment or threatens marine life. If possible, try to opt for New Zealand Salmon instead of Coho, and Albacore Tuna instead of Bluefin.";
+      document.getElementById("numberOut2").innerHTML = "These fish are on the Seafood Watch 'Avoid' list. This means that they are currently being farmed or fished in a way that harms the environment or threatens marine life. If possible, try to opt for New Zealand Salmon instead of Coho, and Albacore Tuna instead of Bluefin.";
 
       }
       if (x == "B4"){
