@@ -4,14 +4,17 @@
     font-family: "Courier New";
     opacity: 0.8;
     display: flex;
-    grid-area: 2 / 2 / 3 / 7;
+    border-radius: 5px;
+    grid-area: 1 / 1 / 2 / 9;
     justify-content: space-between;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .topnav a {
     float: left;
     color: black;
     text-align: center;
-    padding: 15px 10px;
+    padding: 30px 30px;
     text-decoration: none;
     font-size: 30px;
 }
@@ -22,29 +25,9 @@
     color: black;
 }
 
-.topnav {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.item1 {
-  grid-area: 4 / 3 / 5 / 6;
-}
-
-.item2 {
-  grid-area: 6 / 4 / 7 / 5;
-}
-
-.grid {
+.grid-container {
   display: grid;
-  grid-template: .25fr 1fr 1fr 2fr 2fr / .25fr 1fr 2fr 2fr 2fr 1fr 0.25fr;
-  grid-gap: 5px;
-  opacity: 0.8;
-}
-
-.item1 {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-template: repeat(2, 12.5%) 50% 12.5% 12.5% / repeat(8, 1fr);
 }
 
 body {
@@ -88,21 +71,23 @@ h3 {
 }
 .title {
   position: relative;
-  top: 40px;
-  left:30px;
-  right: 30px;
+  grid-area: 3 / 2 / 4 / 8;
+  top: 100px;
+  left: 50px;
+  right: 50px;
   font-family: "Courier New";
   color: black;
-  font-size: 30px;
-  opacity: 0.75;
+  font-size: 50px;
+  opacity: 0.8;
   overflow: auto;
   background-color: white;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  align-items: center;
+  align: center;
   text-align: center;
+  border-radius: 200px;
 }
 
 .questions {
@@ -127,17 +112,12 @@ button {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    border-radius: 12px;
+    border-radius: 100px;
+    grid-row: 5 / 6;
+    grid-column: 4 / 6;
 }
-.home button {
 
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
 select {
   font-family: Helvetica;
   font-size: 20px;
