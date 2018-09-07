@@ -51,7 +51,7 @@ h3 {
 
 }
 .main-content {
-  top: 300px;
+  top: 30px;
   right: 30px;
   left: 30px;
   bottom: 30px;
@@ -60,10 +60,11 @@ h3 {
   font-weight: 200;
   font-family: "Raleway", sans-serif;
   font-size: 25px;
+  width: 95%;
   background-color: white;
   overflow: auto;
   border-radius: 5px;
-  grid-area: 3 / 1 / 6 / 9;
+  position: relative;
 }
 
 .form {
@@ -144,4 +145,32 @@ select {
   color: white;
   display: flex;
 
+}
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 30px;
+
+}
+.column3 {
+  float: right;
+  width: 50%;
+  padding: 30px;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
