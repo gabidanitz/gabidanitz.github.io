@@ -151,40 +151,41 @@ select {
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column1 {
   float: left;
+  display: relative;
   width: 20%;
   padding: 5px;
 }
 .column2 {
   float: left;
+  display: relative;
   width: 20%;
   padding: 5px;
 }
 .column3 {
   float: left;
+  display: relative;
   width: 20%;
   padding: 5px;
 }
 .column4 {
   float: left;
+  display: relative;
   width: 20%;
   padding: 5px;
 }
 .column5 {
   float: right;
+  display: relative;
   width: 20%;
   padding: 5px;
 }
 
+.row {
+  display: relative;
+}
 /* Clear floats after image containers */
 .row::after {
   content: "";
   clear: both;
   display: table;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
 }
