@@ -16,25 +16,30 @@
     <a href="getinvolved.html">Get Involved</a>
     <a href="moreinfo.html">More Information   </a>
   </div>
+<div class="main-content">
+  A <strong>sustainble diet</strong> involves eating in a way that meets our own health needs, without compromising the needs of future generations.
+  Take this short quiz to learn more about how your diet affects the environment.
+  <br><hr>
 
-<div class="questions">
-  <div class="question 1">
-    <form>
-      How often do you consume meat or poultry? 
-    <select id="numberPicker1">
-      <option value = 1>At Every Meal</option>
-      <option value = 2>Once Per Day</option>
-      <option value = 3>A Few Times Per Week</option>
-      <option value = 4>Never</option>
-    </select>
-  </form>
-    <button type="button" onclick="myFunction()">Submit</button>
+  <div class="questions">
+    <div class="question 1">
+      <form>
+        <b>1. How often do you consume meat or poultry?</b>
+        <br>
+      <select id="numberPicker1">
+        <option value = 1>At Every Meal</option>
+        <option value = 2>Once Per Day</option>
+        <option value = 3>A Few Times Per Week</option>
+        <option value = 4>Never</option>
+      </select>
+    </form>
+      <button type="button" onclick="myFunction()">Submit</button>
 
-    <p id="numberOut1"></p>
+      <p id="numberOut1"></p>
 
     <div class="question 2">
       <form>
-        If you eat fish, which type do you typically purchase?
+        <b>2. If you eat fish, which type do you typically purchase?</b>
       <select id="numberPicker2">
         <option value = B1>Pacific cod, Albacore Tuna, or New Zealand Salmon</option>
         <option value = B2>Mahi Mahi, Tilapia, or Trout</option>
@@ -46,6 +51,26 @@
       <button type="button" onclick="myFunction2()">Submit</button>
 
       <p id="numberOut2"></p>
+    </div>
+
+    <div class="question 3">
+        <form>
+          <b>3. What type of fruits and vegetables do you typically purchase?</b>
+          <br>
+        <select id="numberPicker3">
+          <option value = C1>Local</option>
+          <option value = C2>Seasonal</option>
+          <option value = C3>Other/Any Type</option>
+
+        </select>
+        </form>
+
+        <button type="button" onclick="myFunction3()">Submit</button>
+        <p id="numberOut3"></p>
+        <hr>
+        ...More Questions Coming Soon
+      </div>
+
     </div>
   </div>
 </div>
@@ -105,11 +130,36 @@
     }
     </script>
 
+    <script>
+        function myFunction3() {
+          var x = document.getElementById("numberPicker3").value;
+
+          if (x == "C1"){
+
+          document.getElementById("numberOut3").innerHTML = "Purchasing local produce greatly reduces the amount of greenhouse gas emissions released to transport a piece of food from the farm to our kitchens. Since the food spends less time traveling, they are also typically fresher and more nutrient rich. ";
+
+
+          }
+          if (x == "C2"){
+
+          document.getElementById("numberOut3").innerHTML = "Seasonal and local produce often go hand in hand. Purchasing foods that are in-season in your area increases the likelihood that the food was grown locally, and therefore did not require large amounts of fossil fuels to transport. To learn which foods are in season right now, visit the Get Involved page.";
+
+          }
+          if (x == "C3"){
+
+          document.getElementById("numberOut3").innerHTML = "Becoming more mindful of where food is produced can help reduce your environmental impact. When shopping at the store, look at the produce labels to determine where the food was grown. Blueberries grown in Chile, for example, must to travel thousands of miles to reach a grocery store in San Francisco, resulting in large amounts of greenhouse gas emissions.";
+
+          }
+        }
+        </script>
+  </div>
+
     <style>
       body {
         background-image: url("images/tractor-high-res.jpg");
         }
     </style>
+
 
 <!--end html from https://www.w3schools.com/css/css _navbar.asp -->
 </body>
